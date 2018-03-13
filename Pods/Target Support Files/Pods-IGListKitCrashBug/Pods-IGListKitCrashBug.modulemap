@@ -1,0 +1,6 @@
+framework module Pods_IGListKitCrashBug {
+  umbrella header "Pods-IGListKitCrashBug-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,6 +12,13 @@
 		0992DA002057EDD200641F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0992D9FE2057EDD200641F1E /* Main.storyboard */; };
 		0992DA022057EDD200641F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0992DA012057EDD200641F1E /* Assets.xcassets */; };
 		0992DA052057EDD200641F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0992DA032057EDD200641F1E /* LaunchScreen.storyboard */; };
+		0992DA0D2057EE9900641F1E /* BugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA0C2057EE9900641F1E /* BugViewController.swift */; };
+		0992DA0F2057F0D900641F1E /* FormTextViewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */; };
+		0992DA112057F0FD00641F1E /* FormTextViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */; };
+		0992DA142057F12100641F1E /* FormTextViewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */; };
+		0992DA152057F12100641F1E /* FormTextViewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */; };
+		0992DA17205806DD00641F1E /* ViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA16205806DD00641F1E /* ViewModelProvider.swift */; };
+		17E5023674465F71E0489F44 /* Pods_IGListKitCrashBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A646A5065D96A9AA9F349B1 /* Pods_IGListKitCrashBug.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,15 @@
 		0992DA012057EDD200641F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0992DA042057EDD200641F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0992DA062057EDD200641F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0992DA0C2057EE9900641F1E /* BugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewController.swift; sourceTree = "<group>"; };
+		0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewSectionController.swift; sourceTree = "<group>"; };
+		0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewViewModel.swift; sourceTree = "<group>"; };
+		0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextViewCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		0992DA16205806DD00641F1E /* ViewModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProvider.swift; sourceTree = "<group>"; };
+		4A646A5065D96A9AA9F349B1 /* Pods_IGListKitCrashBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitCrashBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AC3B216AE58EB4428200524 /* Pods-IGListKitCrashBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitCrashBug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug.debug.xcconfig"; sourceTree = "<group>"; };
+		D7D46BC29CF5E52794490CDC /* Pods-IGListKitCrashBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitCrashBug.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E5023674465F71E0489F44 /* Pods_IGListKitCrashBug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				0992D9F92057EDD200641F1E /* IGListKitCrashBug */,
 				0992D9F82057EDD200641F1E /* Products */,
+				5D4CE2F487F2C87CE3493A0A /* Pods */,
+				A32BE02AF486E8295825BC2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,37 @@
 		0992D9F92057EDD200641F1E /* IGListKitCrashBug */ = {
 			isa = PBXGroup;
 			children = (
-				0992D9FA2057EDD200641F1E /* AppDelegate.swift */,
-				0992D9FC2057EDD200641F1E /* ViewController.swift */,
-				0992D9FE2057EDD200641F1E /* Main.storyboard */,
-				0992DA012057EDD200641F1E /* Assets.xcassets */,
-				0992DA032057EDD200641F1E /* LaunchScreen.storyboard */,
 				0992DA062057EDD200641F1E /* Info.plist */,
+				0992D9FA2057EDD200641F1E /* AppDelegate.swift */,
+				0992DA0C2057EE9900641F1E /* BugViewController.swift */,
+				0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */,
+				0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */,
+				0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */,
+				0992D9FC2057EDD200641F1E /* ViewController.swift */,
+				0992DA012057EDD200641F1E /* Assets.xcassets */,
+				0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */,
+				0992DA032057EDD200641F1E /* LaunchScreen.storyboard */,
+				0992D9FE2057EDD200641F1E /* Main.storyboard */,
+				0992DA16205806DD00641F1E /* ViewModelProvider.swift */,
 			);
 			path = IGListKitCrashBug;
+			sourceTree = "<group>";
+		};
+		5D4CE2F487F2C87CE3493A0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AC3B216AE58EB4428200524 /* Pods-IGListKitCrashBug.debug.xcconfig */,
+				D7D46BC29CF5E52794490CDC /* Pods-IGListKitCrashBug.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A32BE02AF486E8295825BC2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A646A5065D96A9AA9F349B1 /* Pods_IGListKitCrashBug.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0992DA092057EDD200641F1E /* Build configuration list for PBXNativeTarget "IGListKitCrashBug" */;
 			buildPhases = (
+				2FE3BF4543191A586ACFD5AF /* [CP] Check Pods Manifest.lock */,
 				0992D9F32057EDD200641F1E /* Sources */,
 				0992D9F42057EDD200641F1E /* Frameworks */,
 				0992D9F52057EDD200641F1E /* Resources */,
+				7B75B65F5638A426321C9854 /* [CP] Embed Pods Frameworks */,
+				62CD69FB1B81A780D13C837D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +170,66 @@
 			files = (
 				0992DA052057EDD200641F1E /* LaunchScreen.storyboard in Resources */,
 				0992DA022057EDD200641F1E /* Assets.xcassets in Resources */,
+				0992DA152057F12100641F1E /* FormTextViewCellCollectionViewCell.xib in Resources */,
 				0992DA002057EDD200641F1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FE3BF4543191A586ACFD5AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKitCrashBug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62CD69FB1B81A780D13C837D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B75B65F5638A426321C9854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0992D9F32057EDD200641F1E /* Sources */ = {
@@ -137,7 +237,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0992D9FD2057EDD200641F1E /* ViewController.swift in Sources */,
+				0992DA112057F0FD00641F1E /* FormTextViewViewModel.swift in Sources */,
+				0992DA17205806DD00641F1E /* ViewModelProvider.swift in Sources */,
+				0992DA0D2057EE9900641F1E /* BugViewController.swift in Sources */,
 				0992D9FB2057EDD200641F1E /* AppDelegate.swift in Sources */,
+				0992DA142057F12100641F1E /* FormTextViewCellCollectionViewCell.swift in Sources */,
+				0992DA0F2057F0D900641F1E /* FormTextViewSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +377,7 @@
 		};
 		0992DA0A2057EDD200641F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC3B216AE58EB4428200524 /* Pods-IGListKitCrashBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +393,7 @@
 		};
 		0992DA0B2057EDD200641F1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7D46BC29CF5E52794490CDC /* Pods-IGListKitCrashBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
