@@ -12,7 +12,7 @@ protocol FormTextViewCellCollectionViewCellDelegate: class {
     func textViewDidChange(_ string: String?)
 }
 
-class FormTextViewCellCollectionViewCell: UICollectionViewCell {
+class FormTextViewCell: UICollectionViewCell {
 
     weak var delegate: FormTextViewCellCollectionViewCellDelegate?
     
@@ -35,7 +35,7 @@ class FormTextViewCellCollectionViewCell: UICollectionViewCell {
     
 }
 
-extension FormTextViewCellCollectionViewCell : UITextViewDelegate {
+extension FormTextViewCell : UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         self.delegate?.textViewDidChange(textView.text)
     }

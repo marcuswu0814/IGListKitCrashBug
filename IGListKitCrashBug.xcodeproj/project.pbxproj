@@ -15,8 +15,8 @@
 		0992DA0D2057EE9900641F1E /* BugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA0C2057EE9900641F1E /* BugViewController.swift */; };
 		0992DA0F2057F0D900641F1E /* FormTextViewSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */; };
 		0992DA112057F0FD00641F1E /* FormTextViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */; };
-		0992DA142057F12100641F1E /* FormTextViewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */; };
-		0992DA152057F12100641F1E /* FormTextViewCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */; };
+		0992DA142057F12100641F1E /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA122057F12100641F1E /* FormTextViewCell.swift */; };
+		0992DA152057F12100641F1E /* FormTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0992DA132057F12100641F1E /* FormTextViewCell.xib */; };
 		0992DA17205806DD00641F1E /* ViewModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0992DA16205806DD00641F1E /* ViewModelProvider.swift */; };
 		17E5023674465F71E0489F44 /* Pods_IGListKitCrashBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A646A5065D96A9AA9F349B1 /* Pods_IGListKitCrashBug.framework */; };
 /* End PBXBuildFile section */
@@ -32,8 +32,8 @@
 		0992DA0C2057EE9900641F1E /* BugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewController.swift; sourceTree = "<group>"; };
 		0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewSectionController.swift; sourceTree = "<group>"; };
 		0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewViewModel.swift; sourceTree = "<group>"; };
-		0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewCellCollectionViewCell.swift; sourceTree = "<group>"; };
-		0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextViewCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		0992DA122057F12100641F1E /* FormTextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextViewCell.swift; sourceTree = "<group>"; };
+		0992DA132057F12100641F1E /* FormTextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormTextViewCell.xib; sourceTree = "<group>"; };
 		0992DA16205806DD00641F1E /* ViewModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProvider.swift; sourceTree = "<group>"; };
 		4A646A5065D96A9AA9F349B1 /* Pods_IGListKitCrashBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitCrashBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC3B216AE58EB4428200524 /* Pods-IGListKitCrashBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitCrashBug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKitCrashBug/Pods-IGListKitCrashBug.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,12 +76,12 @@
 				0992DA062057EDD200641F1E /* Info.plist */,
 				0992D9FA2057EDD200641F1E /* AppDelegate.swift */,
 				0992DA0C2057EE9900641F1E /* BugViewController.swift */,
-				0992DA122057F12100641F1E /* FormTextViewCellCollectionViewCell.swift */,
+				0992DA122057F12100641F1E /* FormTextViewCell.swift */,
 				0992DA0E2057F0D900641F1E /* FormTextViewSectionController.swift */,
 				0992DA102057F0FD00641F1E /* FormTextViewViewModel.swift */,
 				0992D9FC2057EDD200641F1E /* ViewController.swift */,
 				0992DA012057EDD200641F1E /* Assets.xcassets */,
-				0992DA132057F12100641F1E /* FormTextViewCellCollectionViewCell.xib */,
+				0992DA132057F12100641F1E /* FormTextViewCell.xib */,
 				0992DA032057EDD200641F1E /* LaunchScreen.storyboard */,
 				0992D9FE2057EDD200641F1E /* Main.storyboard */,
 				0992DA16205806DD00641F1E /* ViewModelProvider.swift */,
@@ -170,7 +170,7 @@
 			files = (
 				0992DA052057EDD200641F1E /* LaunchScreen.storyboard in Resources */,
 				0992DA022057EDD200641F1E /* Assets.xcassets in Resources */,
-				0992DA152057F12100641F1E /* FormTextViewCellCollectionViewCell.xib in Resources */,
+				0992DA152057F12100641F1E /* FormTextViewCell.xib in Resources */,
 				0992DA002057EDD200641F1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +241,7 @@
 				0992DA17205806DD00641F1E /* ViewModelProvider.swift in Sources */,
 				0992DA0D2057EE9900641F1E /* BugViewController.swift in Sources */,
 				0992D9FB2057EDD200641F1E /* AppDelegate.swift in Sources */,
-				0992DA142057F12100641F1E /* FormTextViewCellCollectionViewCell.swift in Sources */,
+				0992DA142057F12100641F1E /* FormTextViewCell.swift in Sources */,
 				0992DA0F2057F0D900641F1E /* FormTextViewSectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

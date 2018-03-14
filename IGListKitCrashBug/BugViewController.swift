@@ -67,7 +67,7 @@ extension BugViewController: ViewModelProviderDelegate {
 extension BugViewController: ListAdapterDataSource {
     
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return self.provider.viewModels!
+        return self.provider.viewModels
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

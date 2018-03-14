@@ -29,7 +29,7 @@ class FormTextViewSectionController: ListSectionController {
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = self.collectionContext?.dequeueReusableCell(withNibName: "FormTextViewCellCollectionViewCell",
+        guard let cell = self.collectionContext?.dequeueReusableCell(withNibName: "FormTextViewCell",
                                                                      bundle: nil,
                                                                      for: self,
                                                                      at: 0)
@@ -37,7 +37,7 @@ class FormTextViewSectionController: ListSectionController {
             fatalError()
         }
         
-        if let cell = cell as? FormTextViewCellCollectionViewCell {
+        if let cell = cell as? FormTextViewCell {
             cell.delegate = self
             cell.config(with: self.viewModel!)
             self.height = self.heightFor(cell)
