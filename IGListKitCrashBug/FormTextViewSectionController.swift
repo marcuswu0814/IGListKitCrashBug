@@ -78,7 +78,9 @@ extension FormTextViewSectionController: FormTextViewCellCollectionViewCellDeleg
     fileprivate func heightFor(_ cell: UICollectionViewCell) -> CGFloat {
         cell.layoutIfNeeded()
         
-        let size = cell.contentView.systemLayoutSizeFitting((self.collectionContext?.containerSize)!)
+        let size = cell.contentView.systemLayoutSizeFitting((self.collectionContext?.containerSize)!,
+                                                            withHorizontalFittingPriority: UILayoutPriority(rawValue: 1000),
+                                                            verticalFittingPriority: UILayoutPriority(rawValue: 250))
         
         return size.height
     }
