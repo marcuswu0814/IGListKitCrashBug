@@ -21,26 +21,11 @@ class ViewModelProvider: NSObject {
 
     weak var delegate: ViewModelProviderDelegate?
     
-    var viewModels: [ListDiffable]?
+    var viewModels: [ListDiffable] = []
     
     
     override init() {
         super.init()
-        
-        self.viewModels = [FormTextViewViewModel("1", inputText: "1-1"),
-                           FormTextViewViewModel("2", inputText: "2-1"),
-                           FormTextViewViewModel("3", inputText: "3-1"),
-                           FormTextViewViewModel("4", inputText: "4-1"),
-                           FormTextViewViewModel("5", inputText: "5-1"),
-                           FormTextViewViewModel("6", inputText: "6-1"),
-                           FormTextViewViewModel("7", inputText: "7-1"),
-                           FormTextViewViewModel("8", inputText: "8-1"),
-                           FormTextViewViewModel("9", inputText: "9-1"),
-                           FormTextViewViewModel("10", inputText: "10-1"),
-                           FormTextViewViewModel("11", inputText: "11-1"),
-                           FormTextViewViewModel("12", inputText: "12-1"),
-                           FormTextViewViewModel("13", inputText: "13-1"),
-                           FormTextViewViewModel("14", inputText: "14-1")]
         
         let semaphore = DispatchSemaphore(value: 0)
 
@@ -49,7 +34,7 @@ class ViewModelProvider: NSObject {
             semaphore.signal()
             
             DispatchQueue.main.async {
-                self.viewModels = [FormTextViewViewModel("1", inputText: lorem),
+                self.viewModels = [FormTextViewViewModel("1", inputText: "Lorem Ipsum is simply dummy text of"),
                                    FormTextViewViewModel("2", inputText: lorem),
                                    FormTextViewViewModel("3", inputText: lorem),
                                    FormTextViewViewModel("4", inputText: lorem),
